@@ -1,0 +1,39 @@
+.ToDo {
+    display: flex;
+    flex-direction: column;
+  .Title {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #174348;
+  }
+
+  .FormContainer {
+    display: flex;
+    .Input {
+      width: 954px;
+    }
+    .Button {
+      margin-left: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ToDo {
+    width: 100%;
+    .FormContainer {
+      width: 100%;
+      flex-direction: column;
+      .Input {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      .Button {
+        margin-left: calc(100% - 100px);
+      }
+    }
+  }
+}

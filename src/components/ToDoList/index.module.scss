@@ -1,0 +1,22 @@
+.ToDoList {
+  display: flex;
+  flex-direction: column;
+  .TodoItem {
+    display: flex;
+    flex-direction: column;
+    .Divider {
+      margin-left: 80px;
+      margin-right: 230px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ToDoList {
+    .TodoItem {
+      .Divider {
+        margin: 0 24px;
+      }
+    }
+  }
+}

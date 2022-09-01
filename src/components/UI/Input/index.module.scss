@@ -1,0 +1,55 @@
+.Input {
+  :global {
+    .MuiFormControl-root {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+
+    .MuiInputBase-input.MuiOutlinedInput-input {
+      border-radius: 4px;
+      height: 19px;
+    }
+
+    .MuiOutlinedInput-root {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #FFCD04;
+        border-radius: 4px;
+        color: #174348;
+      }
+      &:hover {
+        .MuiOutlinedInput-notchedOutline {
+          border-color:  #FFCD04;
+        }
+      }
+    }
+
+    .MuiFormHelperText-root {
+      color: #FF3104;
+      font-family: 'Poppins';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      margin-left: 0;
+    }
+
+    .MuiOutlinedInput-root.Mui-focused {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #FFCD04;
+      }
+    }
+
+    .MuiInputLabel-root.Mui-error,
+    .MuiInputLabel-root.Mui-focused {
+      color: #DFDFDF;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      font-family: 'Poppins';
+    }
+
+    .MuiOutlinedInput-root.Mui-focusVisible {
+      border-radius: 4px;
+    }
+  }
+}

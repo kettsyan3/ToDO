@@ -1,0 +1,59 @@
+.ToDoItem {
+  width: 100%;
+  height: 72px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .Content {
+    width: 750px;
+    display: flex;
+    align-items: center;
+
+    .Checkbox {
+      margin-left: 80px;
+    }
+
+    .Text {
+      margin-left: 25px;
+      font-family: 'Poppins';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: #666666;
+    }
+  }
+
+  .Icon {
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    color: #174348;
+    margin-right: 250px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .ToDoItem {
+    height: 94px;
+    .Content {
+      margin-left: 8px;
+      .Checkbox {
+        margin-top: -8px;
+        margin-left: 8px;
+      }
+
+      .Text {
+        font-size: 16px;
+        line-height: 27px;
+        margin-left: 8px;
+      }
+    }
+
+    .Icon {
+      margin-right: 24px;
+    }
+  }
+}
